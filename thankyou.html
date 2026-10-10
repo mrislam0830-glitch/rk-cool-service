@@ -1,42 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <title>Thank You | R.K. Cool Services</title>
-     
-     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18100290110"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-       gtag('config', 'AW-18100290110');
-     </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | R.K. Cool Services</title>
+  <meta name="description" content="Thank you for booking your appliance repair service with R.K. Cool Services.">
+  <meta name="author" content="R.K. Cool Services">
 
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <style>
-          body { font-family: sans-serif; background-color: #f4f4f4; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-          .thank-you-box { text-align: center; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 500px; width: 90%; }
-          .thank-you-box i { font-size: 80px; color: #28a745; margin-bottom: 20px; }
-          .thank-you-box h2 { font-weight: bold; color: #333; margin-bottom: 15px; }
-          .thank-you-box p { font-size: 18px; color: #666; margin-bottom: 25px; line-height: 1.6; }
-          .btn-home { background-color: #007bff; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; margin-top: 5px; }
-          .btn-home:hover { background-color: #0056b3; color: white; text-decoration: none; }
-     </style>
+  <!-- FAVICON (Browser Tab Logo) -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Google Ads conversion tracking (gtag.js) — preserved from original -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18100290110"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18100290110');
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .thankyou-wrap {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, var(--hero-bg), #102a43);
+      padding: 100px 20px 80px; position: relative; overflow: hidden;
+    }
+    .thankyou-wrap::before {
+      content: ''; position: absolute; inset: 0;
+      background: url('../images/hero-ac.jpg') center / cover no-repeat; opacity: 0.08;
+    }
+    .thankyou-card {
+      max-width: 560px; text-align: center; background: #fff;
+      padding: 52px 36px; border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg); position: relative; z-index: 1;
+      animation: cardRise 0.6s ease-out;
+    }
+    @keyframes cardRise {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .thankyou-card .check-icon {
+      width: 88px; height: 88px; margin: 0 auto 28px;
+      background: linear-gradient(135deg, var(--success), #16a34a);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 44px; color: #fff; box-shadow: 0 8px 25px rgba(34, 197, 94, 0.35);
+      animation: checkPop 0.5s ease-out 0.3s both;
+    }
+    @keyframes checkPop {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
+    }
+    .thankyou-card .ty-brand {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      margin-bottom: 8px; font-size: 18px; font-weight: 800; color: var(--neutral-900);
+    }
+    .thankyou-card .ty-brand img { width: 36px; height: 36px; border-radius: var(--radius-sm); }
+    .thankyou-card .ty-brand span { color: var(--primary); }
+    .thankyou-card h1 { font-size: 30px; margin-bottom: 16px; }
+    .thankyou-card p { color: var(--neutral-600); margin-bottom: 20px; line-height: 1.7; font-size: 15px; }
+    .thankyou-card .urgent-box {
+      background: var(--neutral-50); border-radius: var(--radius-md);
+      padding: 20px; margin-bottom: 28px; border: 1px solid var(--neutral-200);
+    }
+    .thankyou-card .urgent-box strong { display: block; color: var(--neutral-800); margin-bottom: 6px; }
+    .thankyou-card .urgent-box a {
+      color: var(--primary); font-weight: 800; font-size: 22px;
+    }
+    .thankyou-card .ty-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .thankyou-card .ty-btns .btn-base { flex: 1; min-width: 180px; }
+    .thankyou-card .ty-contact {
+      margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--neutral-200);
+      font-size: 13px; color: var(--neutral-500); line-height: 1.6;
+    }
+    .thankyou-card .ty-contact a { color: var(--primary); font-weight: 600; }
+  </style>
 </head>
 <body>
 
-     <div class="thank-you-box">
-          <i class="fa fa-check-circle"></i>
-          <h2>Aapka Booking Ho Gaya Hai!</h2>
-          <p>
-            <b>R.K. Cool Services</b> ko chunne ke liye shukriya. <br>
-            Humari team agle <b>5 minutes</b> mein aapse contact karegi.
-          </p>
-          
-          <a href="index.html" class="btn-home">Return to Home</a>
-     </div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="R.K. Cool Services Logo">
+        R.K.<span>COOL</span> SERVICES
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#ac-services">AC Services</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="index.html#work">Services</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="index.html#contact" class="nav-cta">Book Now</a>
+        <a href="tel:9920291377" class="nav-cta-btn">Call 9920291377</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
+  <div class="thankyou-wrap">
+    <div class="thankyou-card">
+      <div class="ty-brand">
+        <img src="images/logo.png" alt="R.K. Cool Services">
+        R.K.<span>COOL</span> SERVICES
+      </div>
+      <div class="check-icon">&#10003;</div>
+      <h1>Thank You!</h1>
+      <p>Your service request has been submitted successfully. Our expert technician will call you shortly to confirm your booking and arrival time.</p>
+      <div class="urgent-box">
+        <strong>Need urgent service right now?</strong>
+        Call us directly at <a href="tel:9920291377">+91 9920291377</a>
+      </div>
+      <div class="ty-btns">
+        <a href="index.html" class="btn-base btn-primary btn-large">Go Back to Home</a>
+        <a href="tel:9920291377" class="btn-base btn-success btn-large">Call Now</a>
+      </div>
+      <div class="ty-contact">
+        R.K. Cool Services &middot; Sakinaka, Mumbai &middot; <a href="mailto:mrislam0830@gmail.com">mrislam0830@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING CALL BUTTON -->
+  <a href="tel:9920291377" class="floating-call">&#128222; Call Now</a>
+
+  <!-- WHATSAPP WIDGET -->
+  <div class="whatsapp-btn" onclick="whatsappcall();">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.406c0 6.555-5.332 11.887-11.888 11.887-2.01 0-3.985-.512-5.748-1.483l-6.236 1.707zm6.401-3.669l.357.213c1.554.921 3.344 1.408 5.174 1.408 5.483 0 9.946-4.463 9.946-9.946 0-2.657-1.034-5.155-2.911-7.032-1.878-1.877-4.375-2.911-7.034-2.911-5.484 0-9.947 4.464-9.947 9.947 0 1.83.488 3.619 1.411 5.174l.233.391-1.123 4.106 4.212-1.153zm11.231-7.01c-.305-.153-1.805-.891-2.085-.992-.28-.103-.483-.153-.685.153-.203.305-.788.992-.966 1.194-.178.203-.357.228-.661.076-.305-.152-1.287-.474-2.451-1.511-.905-.808-1.516-1.805-1.693-2.109-.178-.305-.019-.47.133-.621.137-.136.305-.356.457-.533.153-.178.203-.305.305-.508.102-.203.051-.381-.025-.533-.076-.153-.685-1.651-.939-2.261-.248-.595-.5-.513-.685-.522-.178-.008-.381-.01-.584-.01s-.533.076-.813.381c-.28.305-1.066 1.042-1.066 2.541s1.092 2.946 1.244 3.149c.153.203 2.15 3.282 5.207 4.601.726.314 1.292.502 1.734.642.729.232 1.39.199 1.912.122.583-.085 1.805-.737 2.059-1.448.254-.711.254-1.321.178-1.448-.076-.127-.279-.203-.584-.356z"/></svg>
+  </div>
+
+  <!-- MOBILE STICKY CTA BAR -->
+  <div class="mobile-cta-bar">
+    <a href="tel:9920291377" class="call-btn">&#128222; Call Now</a>
+    <a href="index.html#contact" class="book-btn">&#128221; Book Service</a>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
