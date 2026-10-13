@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -8,11 +6,7 @@
   <meta name="description" content="Expert tips and guides for AC maintenance, refrigerator care, washing machine cleaning, and microwave safety from R.K. Cool Services.">
   <meta name="author" content="R.K. Cool Services">
 
-  <!-- FAVICON (Browser Tab Logo) -->
-  <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="apple-touch-icon" href="images/logo.png">
-
-  <!-- Google Ads conversion tracking (gtag.js) — preserved from original -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18100290110"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,6 +14,28 @@
     gtag('js', new Date());
     gtag('config', 'AW-18100290110');
   </script>
+
+  <!-- Event snippet for Click to call conversion page -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18100290110/mhvQCOyjnpsdEL6E8rZD',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
+  <!-- FAVICON (Browser Tab Logo) -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
 
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -39,7 +55,6 @@
     .pp-back { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px; color: var(--primary); font-weight: 600; }
   </style>
 </head>
-<body>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">

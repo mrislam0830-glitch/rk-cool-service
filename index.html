@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -9,11 +7,7 @@
   <meta name="keywords" content="AC repair Powai, Fridge repair, Washing machine service, Microwave repair, R.K. Cool Services">
   <meta name="author" content="R.K. Cool Services">
 
-  <!-- FAVICON (Browser Tab Logo) -->
-  <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="apple-touch-icon" href="images/logo.png">
-
-  <!-- Google Ads conversion tracking (gtag.js) — preserved from original -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18100290110"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -22,10 +16,93 @@
     gtag('config', 'AW-18100290110');
   </script>
 
+  <!-- Event snippet for Click to call conversion page -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18100290110/mhvQCOyjnpsdEL6E8rZD',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
+  <!-- FAVICON (Browser Tab Logo) -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
   <link rel="stylesheet" href="css/style.css">
   <meta property="og:image" content="https://bolt.new/static/og_default.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+
+  <!-- ================================================================= -->
+  <!-- GOOGLE ADS VERIFICATION & INDIVIDUAL DECLARATION (HIDDEN SCRIPT)  -->
+  <!-- ================================================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RK Cool Service",
+    "description": "Independent Home Appliance Repair and Service Provider for AC, Refrigerator, Washing Machine and Microwave in Mumbai.",
+    "url": "https://rk-cool-service.netlify.app/",
+    "telephone": "+919920291377",
+    "email": "mrislam0830@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room No A1 Plot No 9/2 Kolhapur Wala Estate, Yadav Nagar Near Hari Majid Kherani Road Sakinaka",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400072",
+      "addressCountry": "IN"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "MOHAMMAD ISLAM ABDUL KALAM MANIHAR",
+      "birthDate": "2002-09-30",
+      "parent": "ABDUL KALAM MANIHAR",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PAN Card Number",
+          "value": "GHOPM8083G"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "Driving License Number",
+          "value": "MH02 20240004059"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script>
+  /* 
+    NOTE TO GOOGLE ADS REVIEW & VERIFICATION TEAM:
+    Respected Team, I am operating a genuine individual local service business under the name RK Cool Service. 
+    I personally provide multi-brand doorstep repair services for home appliances (AC, Refrigerator, Washing Machine, Microwave) 
+    in local Mumbai areas with complete honesty, transparency, and high quality. I am an independent technician and service provider, 
+    and I fully comply with all Google Ads Advertising Policies. All information provided in my government-issued identification documents 
+    (PAN Card & Driving License) matches my business details perfectly.
+    
+    Owner Full Name: MOHAMMAD ISLAM ABDUL KALAM MANIHAR
+    Father's Name: ABDUL KALAM MANIHAR
+    DOB: 30-09-2002
+    PAN: GHOPM8083G
+    Driving License: MH02 20240004059
+    Address: Room No A1 Plot No 9/2 Kolhapur Wala Estate, Yadav Nagar Near Hari Majid Kherani Road Sakinaka, Mumbai, Maharashtra, 400072
+  */
+  console.log("RK Cool Service Verification Payload Loaded Securely.");
+  </script>
+  <!-- ================================================================= -->
 </head>
 
   <!-- PRELOADER -->
@@ -35,11 +112,29 @@
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#home" class="nav-brand">
+    <div class="container nav-inner" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      
+      <!-- Brand Logo & Name -->
+      <a href="#home" class="nav-brand" style="display: flex; align-items: center; gap: 8px;">
         <img src="images/logo.png" alt="R.K. Cool Services Logo">
-        R.K.<span>COOL</span> SERVICES
+        <span>R.K.<span>COOL</span> SERVICES</span>
       </a>
+
+      <!-- Mobile Quick Action Buttons with Clear Girl Icon & Larger Size -->
+      <div class="mobile-nav-icons" style="display: flex; align-items: center; gap: 8px; margin-left: auto; margin-right: 12px;">
+        <!-- Mobile Book Now Button -->
+        <a href="#contact" style="display: inline-flex; align-items: center; gap: 5px; background: #2563eb; color: #fff; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 20px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80" alt="Icon" style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover; border: 1px solid #fff;">
+          Book
+        </a>
+        <!-- Mobile Call Now Button -->
+        <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" style="display: inline-flex; align-items: center; gap: 5px; background: #dc3545; color: #fff; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 20px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80" alt="Icon" style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover; border: 1px solid #fff;">
+          Call
+        </a>
+      </div>
+
+      <!-- Nav Links -->
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -48,11 +143,19 @@
         <a href="#work">Services</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="#contact" class="nav-cta">Book Now</a>
-        <a href="tel:9920291377" class="nav-cta-btn">Call 9920291377</a>
+        
+        <!-- Desktop Emergency Call Button with Clear, Bigger Girl Icon -->
+        <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" class="nav-cta-btn" style="display: inline-flex; align-items: center; gap: 10px; background: #dc3545; color: #fff; padding: 8px 18px; border-radius: 30px; font-weight: 700; text-decoration: none;">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80" alt="Support" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+          ⚡ Emergency Call
+        </a>
       </div>
+
+      <!-- Toggle Button for Mobile Menu -->
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
+
     </div>
   </nav>
 
@@ -64,7 +167,7 @@
     <!-- Individual Area-Wise Call Chips -->
     <div class="hero-badge" style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); padding: 14px; border-radius: 12px; backdrop-filter: blur(8px); margin-bottom: 20px;">
       <span style="display: block; font-size: 0.85rem; font-weight: 700; color: #fde047; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">
-        📍 Select Your Area to Call Local Technician:
+        📍 Select Your Area to Call Specialist — Click Now:
       </span>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center;">
         <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" style="background: #22c55e; color: #ffffff; padding: 5px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 20px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: inline-flex; align-items: center; gap: 4px;">📞 Powai</a>
@@ -81,12 +184,21 @@
     </div>
 
     <h1>Expert Appliance Repair &amp; Same Day Service</h1>
-    <h3>Quick &amp; Affordable Solutions for AC, Fridge, Washing Machine &amp; Microwave</h3>
+    
+    <!-- Attractive Pricing Line inside H3 -->
+    <h3 style="line-height: 1.8; font-size: 1.05rem; font-weight: 600;">
+      🔥 Special Offers: 
+      AC Jet Service / Deep Cleaning <span style="color: #fde047; font-weight: 800; background: rgba(0,0,0,0.4); padding: 2px 7px; border-radius: 6px;">₹499</span> &nbsp;|&nbsp; 
+      AC Repair <span style="color: #fde047; font-weight: 800; background: rgba(0,0,0,0.4); padding: 2px 7px; border-radius: 6px;">₹299</span> &nbsp;|&nbsp; 
+      AC Installation <span style="color: #fde047; font-weight: 800; background: rgba(0,0,0,0.4); padding: 2px 7px; border-radius: 6px;">₹999</span> &nbsp;|&nbsp; 
+      AC Uninstallation <span style="color: #fde047; font-weight: 800; background: rgba(0,0,0,0.4); padding: 2px 7px; border-radius: 6px;">₹599</span> &nbsp;|&nbsp; 
+      AC Gas <span style="color: #fde047; font-weight: 800; background: rgba(0,0,0,0.4); padding: 2px 7px; border-radius: 6px;">₹999</span>
+    </h3>
     
     <!-- Main Hero Action Buttons with Clean Distinct Colors -->
     <div class="hero-btns" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-      <a href="#contact" class="btn-base btn-primary btn-large btn-pulse" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); border: none; padding: 12px 28px; font-weight: 700; border-radius: 50px; color: #ffffff; text-decoration: none; box-shadow: 0 4px 12px rgba(37,99,235,0.4);">🚀 Book Service Now</a>
-      <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" class="btn-base btn-outline btn-large" style="background: linear-gradient(135deg, #16a34a, #15803d); border: none; padding: 12px 28px; font-weight: 700; border-radius: 50px; color: #ffffff; text-decoration: none; box-shadow: 0 4px 12px rgba(22,163,74,0.4);">📞 Call Local Expert</a>
+      <a href="#contact" class="btn-base btn-primary btn-large btn-pulse" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); border: none; padding: 12px 28px; font-weight: 700; border-radius: 50px; color: #ffffff; text-decoration: none; box-shadow: 0 4px 12px rgba(37,99,235,0.4);">🚀 Book Now</a>
+      <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" style="background: linear-gradient(135deg, #16a34a, #15803d); color: #ffffff; border: none; padding: 12px 28px; font-weight: 700; border-radius: 50px; color: #ffffff; text-decoration: none; box-shadow: 0 4px 12px rgba(22,163,74,0.4); display: inline-flex; align-items: center; gap: 6px;">📞 Call Now</a>
     </div>
 
     <!-- Secondary Direct Emergency Call Button -->
@@ -613,7 +725,7 @@
 
       <div class="booking-card">
         <div class="booking-avatar">
-          <img src="images/support-agent.jpg" alt="Support Agent">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80" alt="Support Agent">
           <div class="status">&#128994; 24/7 Expert Support Online</div>
         </div>
 
@@ -669,80 +781,84 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #cbd5e1; padding: 50px 0 20px 0; border-top: 3px solid #2563eb;">
-    <div class="container">
-      <div class="footer-grid">
-        
-        <!-- Column 1: About Business -->
-        <div class="footer-col">
-          <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-            <span style="color: #38bdf8;">❄️</span> R.K. Cool Services
-          </h3>
-          <p style="font-size: 0.88rem; line-height: 1.5; color: #94a3b8; margin-bottom: 10px;">
-            <strong style="color: #fde047;">Expert Repairs:</strong> AC, Refrigerator, Washing Machine &amp; Microwave ki complete doorstep service.
-          </p>
-          <p style="font-size: 0.88rem; line-height: 1.5; color: #94a3b8;">
-            <strong style="color: #4ade80;">Trusted Service:</strong> 10 Years Experience aur 100% customer satisfaction ke sath.
-          </p>
-        </div>
-
-        <!-- Column 2: Quick Links -->
-        <div class="footer-col">
-          <h4 style="color: #fde047; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px;">Quick Links</h4>
-          <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
-            <li style="margin-bottom: 8px;"><a href="#contact" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: 600;">🚀 Book a Repair</a></li>
-            <li style="margin-bottom: 8px;"><a href="#about" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem;">ℹ️ About Us</a></li>
-            <li style="margin-bottom: 8px;"><a href="#work" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem;">🛠️ Our Services</a></li>
-            <li style="margin-bottom: 8px;"><a href="privacy-policy.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem;">🔒 Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Top Services -->
-        <div class="footer-col">
-          <h4 style="color: #fde047; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px;">Top Services</h4>
-          <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
-            <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">⚡ AC Repair &amp; Service</span></li>
-            <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">❄️ Refrigerator Repair</span></li>
-            <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">🧺 Washing Machine</span></li>
-            <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">🍲 Microwave Oven</span></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Contact Info -->
-        <div class="footer-col footer-contact">
-          <h4 style="color: #fde047; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px;">Contact Information</h4>
-          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 6px;"><strong style="color: #ffffff;">Owner:</strong> MOHAMMAD ISLAM ABDUL KALAM MANIHAR</p>
-          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 10px;"><strong style="color: #ffffff;">Address:</strong> Room No A1, Plot 9/2, Kolhapur wala Estate, Yadav Nagar, Kherani Road, Sakinaka, Mumbai - 400072</p>
-          <p style="margin-top: 10px;">
-            <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: #ffffff; padding: 8px 16px; font-size: 0.88rem; font-weight: 700; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(34,197,94,0.3);">
-              📞 +91 99202 91377
-            </a>
-          </p>
-        </div>
-
+<footer class="footer" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #cbd5e1; padding: 50px 0 20px 0; border-top: 3px solid #2563eb;">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <!-- Column 1: About Business & Value Offer -->
+      <div class="footer-col">
+        <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #38bdf8;">❄️</span> R.K. Cool Services
+        </h3>
+        <p style="font-size: 0.88rem; line-height: 1.5; color: #94a3b8; margin-bottom: 10px;">
+          <strong style="color: #fde047;">⚡ Doorstep Express Repair:</strong> AC, Refrigerator, Washing Machine &amp; Microwave service inside 30 Minutes!
+        </p>
+        <p style="font-size: 0.88rem; line-height: 1.5; color: #94a3b8;">
+          <strong style="color: #4ade80;">🛡️ 100% Genuine Parts:</strong> Trained expert technicians with 90 Days Guarantee on all repairs.
+        </p>
       </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
-        <a href="privacy-policy.html" class="privacy-link" style="color: #38bdf8; text-decoration: none; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 8px;">🔒 Read Our Privacy Policy</a>
-        <p class="copyright" style="font-size: 0.82rem; color: #64748b; margin: 0;">Copyright &copy; 2026 <b style="color: #fde047;">R.K. Cool Services</b> | All Rights Reserved</p>
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 style="color: #fde047; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px;">Quick Links</h4>
+        <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 8px;"><a href="#contact" style="color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: 600;">🚀 Book a Repair</a></li>
+          <li style="margin-bottom: 8px;"><a href="#about" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem;">ℹ️ About Us</a></li>
+          <li style="margin-bottom: 8px;"><a href="#work" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem;">🛠️ Our Services</a></li>
+          <li style="margin-bottom: 8px;"><a href="privacy-policy.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem;">🔒 Privacy Policy</a></li>
+        </ul>
       </div>
+
+      <!-- Column 3: Top Services -->
+      <div class="footer-col">
+        <h4 style="color: #fde047; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px;">Top Services</h4>
+        <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">❄️ AC Jet Service &amp; Repair</span></li>
+          <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">⚡ AC Gas Charging &amp; Leakage</span></li>
+          <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">🧊 Fridge Repair &amp; Gas Refill</span></li>
+          <li style="margin-bottom: 8px;"><span style="color: #cbd5e1; font-size: 0.9rem;">🧺 Washing Machine Repair</span></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Service Coverage Area -->
+      <div class="footer-col footer-contact">
+        <h4 style="color: #fde047; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px;">Service Coverage Area</h4>
+        <p style="font-size: 0.85rem; color: #38bdf8; margin-bottom: 8px; font-weight: 700;">
+          ⚡ Quick Doorstep Repair Support
+        </p>
+        <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 10px; line-height: 1.6;">
+          📍 <strong>Active Locations:</strong> Powai, Hiranandani, Ghatkopar, Chandivali, Kurla, Vikhroli, Bhandup, Sakinaka, Andheri &amp; All Mumbai.
+        </p>
+        <p style="margin-top: 12px;">
+          <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: #ffffff; padding: 10px 20px; font-size: 0.9rem; font-weight: 800; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(34,197,94,0.4);">
+            📞 Call Specialist: 9920291377
+          </a>
+        </p>
+      </div>
+
     </div>
-  </footer>
 
-  <!-- FLOATING CALL BUTTON (Desktop) -->
-  <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" class="floating-call" style="background: linear-gradient(135deg, #22c55e, #15803d); color: #ffffff; font-weight: 800; box-shadow: 0 4px 15px rgba(34,197,94,0.4); text-decoration: none;">📞 Call Now</a>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+      <a href="privacy-policy.html" class="privacy-link" style="color: #38bdf8; text-decoration: none; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 8px;">🔒 Read Our Privacy Policy</a>
+      <p class="copyright" style="font-size: 0.82rem; color: #64748b; margin: 0;">Copyright &copy; 2026 <b style="color: #fde047;">R.K. Cool Services</b> | All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
 
   <!-- WHATSAPP WIDGET — preserved from original -->
   <div class="whatsapp-btn" onclick="whatsappcall();" style="box-shadow: 0 4px 15px rgba(37,211,102,0.4);">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.406c0 6.555-5.332 11.887-11.888 11.887-2.01 0-3.985-.512-5.748-1.483l-6.236 1.707zm6.401-3.669l.357.213c1.554.921 3.344 1.408 5.174 1.408 5.483 0 9.946-4.463 9.946-9.946 0-2.657-1.034-5.155-2.911-7.032-1.878-1.877-4.375-2.911-7.034-2.911-5.484 0-9.947 4.464-9.947 9.947 0 1.83.488 3.619 1.411 5.174l.233.391-1.123 4.106 4.212-1.153zm11.231-7.01c-.305-.153-1.805-.891-2.085-.992-.28-.103-.483-.153-.685.153-.203.305-.788.992-.966 1.194-.178.203-.357.228-.661.076-.305-.152-1.287-.474-2.451-1.511-.905-.808-1.516-1.805-1.693-2.109-.178-.305-.019-.47.133-.621.137-.136.305-.356.457-.533.153-.178.203-.305.305-.508.102-.203.051-.381-.025-.533-.076-.153-.685-1.651-.939-2.261-.248-.595-.5-.513-.685-.522-.178-.008-.381-.01-.584-.01s-.533.076-.813.381c-.28.305-1.066 1.042-1.066 2.541s1.092 2.946 1.244 3.149c.153.203 2.15 3.282 5.207 4.601.726.314 1.292.502 1.734.642.729.232 1.39.199 1.912.122.583-.085 1.805-.737 2.059-1.448.254-.711.254-1.321.178-1.448-.076-.127-.279-.203-.584-.356z"/></svg>
   </div>
 
-  <!-- MOBILE STICKY CTA BAR -->
-  <div class="mobile-cta-bar" style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); padding: 10px 15px; border-top: 1px solid rgba(255,255,255,0.1);">
-    <a href="tel:9920291377" onclick="return gtag_report_conversion('tel:9920291377');" class="call-btn" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: #ffffff; font-weight: 800; border-radius: 50px; text-decoration: none; box-shadow: 0 3px 10px rgba(34,197,94,0.4);">📞 Call Now</a>
-    <a href="#contact" class="book-btn" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #ffffff; font-weight: 800; border-radius: 50px; text-decoration: none; box-shadow: 0 3px 10px rgba(37,99,235,0.4);">🚀 Book Service</a>
+  <!-- ========================= CUTE INDIAN SUPPORT CALL BUTTON (FINAL RED THEME) ========================= -->
+<a href="tel:9920291377" class="support-call-btn" aria-label="Call Now">
+  <div class="support-img-wrapper">
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80" alt="Support Executive">
   </div>
+  <span class="call-now-badge">Call Now</span>
+</a>
 
   <script src="js/main.js"></script>
 </body>
